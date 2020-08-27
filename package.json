@@ -1,5 +1,4 @@
 {
-  "homepage": "http://rahulhambarde300.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
+    "express": "^4.17.1",
     "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -22,9 +22,7 @@
     "reactstrap": "^8.5.1"
   },
   "scripts": {
-    "predeploy":"yarn run build",
-    "deploy":"gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
