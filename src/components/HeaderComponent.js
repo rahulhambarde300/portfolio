@@ -99,7 +99,7 @@ function HideOnScroll(props) {
   // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
-  console.log(children);
+  
   return (
     
     <Slide appear={false} direction="down" in={!trigger}>

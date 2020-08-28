@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import { Typography, Box, Container, Grid, Avatar } from '@material-ui/core';
+import styled from 'styled-components';
 import {withStyles} from '@material-ui/core/styles'
 import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -24,7 +25,10 @@ const useStyles = theme =>({
         color:"#03fcd7",
         fontSize:"150%",
         textDecoration:"none",
-        overflow:'wrap'
+        overflow:'wrap',
+        '&:hover':{
+            color:"#fff"
+        }
     },
     bottom:{
         paddingLeft:'7%',
@@ -41,6 +45,21 @@ const useStyles = theme =>({
     }
 });
 
+const Styledpara = styled.p`
+    text-align : left;
+    font-size:20px;
+    @media (max-width: 767px) {
+        font-size:15px
+    }
+`
+const Styledhead = styled.h1`
+    text-align : left;
+    font-size:30px;
+    @media (max-width: 767px) {
+        font-size:20px;
+    }
+`
+
 class Contact extends Component{
     constructor(props){
         super(props);
@@ -51,11 +70,11 @@ class Contact extends Component{
             <div id="contact">
                 <Grid container className={classes.grid}>
                     <Grid item xs={12}>
-                        <Typography variant="h3" className={classes.paper}>Let's Work Together<hr/></Typography>
-                        <Typography variant ="h5" className={classes.paper}>
+                        <Styledhead className={classes.paper}>Let's Work Together<hr/></Styledhead>
+                        <Styledpara className={classes.paper}>
                             I'm always on the lookout for fun new projects so if you've got something that 
                             you think we can work together on, send me a message and we can talk about it!
-                        </Typography>
+                        </Styledpara>
                         
                     </Grid>
                     

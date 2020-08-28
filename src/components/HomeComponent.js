@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { Typography, Box, Container, Grid, Avatar } from '@material-ui/core';
-import {withStyles} from '@material-ui/core/styles'
+import { Typography, Box, Container, Grid, Avatar, Button } from '@material-ui/core';
+import {withStyles, styled} from '@material-ui/core/styles'
 import img from '../Images/rahul.png';
 import Profile from './ProfileComponent';
 import Work from './WorkComponent';
@@ -17,17 +17,35 @@ const useStyles = theme =>({
         color: "#fff",
         fontFamily:'JetBrainsMono',
         paddingTop:'15%',
-        
     },
     grid:{
         paddingTop:'15%',
         paddingBottom:'30%',
         paddingLeft:'7%',
         paddingRight:'7%'
+    },
+    link:{
+        textAlign: 'left',
+        color: "#fff",
+        fontFamily:'JetBrainsMono',
+        fontSize: '20px',
+        textDecoration:"none",
+        '&:hover':{
+            color: "#09adb3"
+        }
+    },
+    button:{
+        marginTop:"5px",
+        '&:hover':{
+            backgroundColor:"inherit",
+            color:"#fff"
+        }
     }
 
 
 })
+
+
 
 class Home extends Component{
     constructor(props){
@@ -39,12 +57,18 @@ class Home extends Component{
         return(
             <div className={classes.root}>
                 <Container >
-                    <Grid container spacing={3} className={classes.grid}>
+                    <Grid container spacing={3} className={classes.grid} >
                         <Grid item md={6} xs={12} >
-                            <Typography className={classes.paper} variant = "h5" > Hi, I am <br/> 
-                                <span style={{ fontSize:"300%"}}>Rahul Hambarde</span><br/> 
-                                A Game And Web Developer
-                            </Typography>
+                            <h2 className={classes.paper} > Hi, I am <br/> 
+                                <span style={{ fontSize:"200%"}}>Rahul Hambarde</span><br/> 
+                                A Game And Web Developer<br/>
+                                <Button variant="contained" color="#328fad" href="https://canva.me/FeBApYvfj9" 
+                                    target="none" className={classes.button}>
+                                    Resume
+                                </Button>
+                                
+                            </h2>
+                            
                             
                         </Grid>
                         <Grid item md={6} xs={12}>

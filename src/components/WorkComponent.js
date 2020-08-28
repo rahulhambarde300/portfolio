@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { useState } from 'react';
+import styled from 'styled-components';
 import {withStyles} from '@material-ui/core/styles';
 import { Typography, Grid, Link, makeStyles } from '@material-ui/core';
 import 'react-slideshow-image/dist/styles.css'
@@ -21,7 +21,7 @@ const useStyles = theme =>({
     grid:{
         paddingLeft:'7%',
         paddingRight:'7%',
-        paddingBottom:'30%'
+        paddingBottom:'7%'
     },
     
 });
@@ -81,8 +81,28 @@ const useStylesFunction = makeStyles((theme) =>({
     
 }));
 
-
+const Styledpara = styled.p`
+    text-align : left;
+    font-size:20px;
+    @media (max-width: 767px) {
+        font-size:15px
+    }
+`
+const Styledhead = styled.h1`
+    text-align : left;
+    font-size:30px;
+    @media (max-width: 767px) {
+        font-size:20px;
+    }
+`
  
+const Styledanchor = styled.a`
+    font-size:30px;
+    @media (max-width: 767px) {
+        font-size:20px;
+    }
+`
+
 const fadeImages = [
   sage,backfire,blob,hole
 ];
@@ -98,15 +118,15 @@ const Slideshow = () => {
         
         <div className="slide-container" className={classes.root} id="work">
             
-            <Fade duration="2000" >
+            <Fade duration="2000" transitionDuration="500">
                 <div className="each-fade">
                 <div className={closs}>
                     <div className={classes.overlay}>
                         <div className={classes.text}>
-                            <a  className={classes.link}
+                            <Styledanchor  className={classes.link}
                                 href="https://snakeeyes2799.itch.io/last-sage">
                                 Last Sage
-                            </a>
+                            </Styledanchor>
                         </div>
                     </div>
                     <img src={fadeImages[0]} className={classes.images} />     
@@ -116,10 +136,10 @@ const Slideshow = () => {
                 <div className={closs}>
                 <   div className={classes.overlay}>
                         <div className={classes.text}>
-                            <a  className={classes.link}
+                            <Styledanchor  className={classes.link}
                                 href="https://anurag1212.itch.io/backfire">
                                 Backfire
-                            </a>
+                            </Styledanchor>
                         </div>
                     </div>
                     <img src={fadeImages[1]} className={classes.images} />
@@ -129,10 +149,10 @@ const Slideshow = () => {
                 <div className={closs}>
                     <div className={classes.overlay}>
                         <div className={classes.text}>
-                            <a  className={classes.link}
+                            <Styledanchor className={classes.link}
                                 href="https://anurag1212.itch.io/blobai">
                                 Blob.AI
-                            </a>
+                            </Styledanchor>
                         </div>
                     </div>
                     <img src={fadeImages[2]} className={classes.images}/>
@@ -142,10 +162,10 @@ const Slideshow = () => {
                 <div className={closs}>
                     <div className={classes.overlay}>
                         <div className={classes.text}>
-                            <a  className={classes.link}
+                            <Styledanchor className={classes.link}
                                 href="https://snakeeyes2799.itch.io/hole-in-black-linux">
                                 Hole In Black
-                            </a>
+                            </Styledanchor>
                         </div>
                     </div>
                     <img src={fadeImages[3]} className={classes.images} />
@@ -166,21 +186,21 @@ class Work extends Component{
             <div>
                 <Grid container className={classes.grid}>
                     <Grid item  xs={12}>
-                        <Typography variant="h3" className={classes.head}>Experience<hr/></Typography>
+                        <Styledhead className={classes.head}>Experience<hr/></Styledhead>
                         <ul className={classes.head}>
                             <li>
-                                <Typography variant ="h5" className={classes.head} >
+                                <Styledpara  className={classes.head} >
                                     I have created games for gamejams like Brackeys Game Jam 2020.1, 2020.2, 
                                     GMTK game jam 2020 and 
                                     Ludum dare 47
-                                </Typography>
+                                </Styledpara >
                                 <Slideshow/>
                             </li>
                             <li>
-                                <Typography variant ="h5" className={classes.head}>
+                                <Styledpara  className={classes.head}>
                                     I have participated in Smart India Hackathon with my team.We were selected in 
                                     internal hackathon and went to national level.
-                                </Typography>
+                                </Styledpara >
                             </li>
                         </ul>
                         
@@ -189,10 +209,10 @@ class Work extends Component{
                         
                     </Grid>
                     <Grid item  xs={12}>
-                        <Typography variant="h3" className={classes.head}>Work<hr/></Typography>
-                        <Typography variant ="h5" className={classes.head}>
+                        <Styledhead className={classes.head}>Work<hr/></Styledhead>
+                        <Styledpara  className={classes.head}>
                             I have worked for Hammercraft studios as a game developer intern
-                        </Typography>
+                        </Styledpara >
                     </Grid>
                     
                 </Grid>
