@@ -13,7 +13,6 @@ import hole from '../Images/itch/hole.png';
 
 const useStyles = theme =>({
     head:{
-        padding: theme.spacing(2),
         textAlign: 'left',
         color: "#86c232",
         fontFamily:'JetBrainsMono'
@@ -21,7 +20,7 @@ const useStyles = theme =>({
     paper:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#6b6e70",
+        color: "#a8b0b5",
         fontFamily:'JetBrainsMono',
 
     },
@@ -82,7 +81,7 @@ const useStylesFunction = makeStyles((theme) =>({
         left: '50%', 
         top: '50%',
         transform: 'translate(-50%, -50%)',
-        color:"#86c232",
+        color:"#a8b0b5",
         fontSize:"300%"
     }
     

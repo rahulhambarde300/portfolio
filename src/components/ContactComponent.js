@@ -14,7 +14,6 @@ const useStyles = theme =>({
         paddingBottom:'30%',
     },
     head:{
-        padding: theme.spacing(2),
         textAlign: 'left',
         color: "#86c232",
         fontFamily:'JetBrainsMono'
@@ -22,7 +21,7 @@ const useStyles = theme =>({
     paper:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#6b6e70",
+        color: "#a8b0b5",
         fontFamily:'JetBrainsMono'
     },
     link:{

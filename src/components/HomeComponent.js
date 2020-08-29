@@ -15,7 +15,7 @@ const useStyles = theme =>({
     paper: {
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#61892f",
+        color: "#86c232",
         fontFamily:'JetBrainsMono',
         paddingTop:'15%',
     },
@@ -37,9 +37,9 @@ const useStyles = theme =>({
     },
     button:{
         marginTop:"5px",
-        backgroundColor:"#61892f",
-        color:"#fff",
-        borderRadius:"10px",
+        backgroundColor:"#86c232",
+        color:"#222629",
+        borderRadius:"5px",
         '&:hover':{
             backgroundColor:"inherit",
             color:"#86c232"
@@ -69,7 +69,7 @@ class Home extends Component{
                         <Grid item md={6} xs={12} >
                             <h2 className={classes.paper} > Hi, I am <br/> 
                                 <span style={{ fontSize:"200%", color : "#fff"}}>Rahul Hambarde</span><br/> 
-                                <span style={{ color : "#6b6e70"}}>A Game And Web Developer</span><br/>
+                                <span style={{ color : "#a8b0b5"}}>A Game And Web Developer</span><br/>
                                 <Button variant="contained" color="primary" href={resume} 
                                     target="none" className={classes.button}>
                                     Resume
