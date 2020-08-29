@@ -84,7 +84,7 @@ class Contact extends Component{
                     </Grid>
                     
                     <a href="mailto:rahulhambarde300@gmail.com?subject=Let's Work Together" className={classes.link}>
-                        <MailIcon style={{paddingRight : "1%", fontSize: "150%" , verticalAlign:"middle"}}/>
+                        <MailIcon style={{paddingRight : "1%", fontSize: "100%" , verticalAlign:"middle"}}/>
                         rahulhambarde300@gmail.com
                     </a>
 

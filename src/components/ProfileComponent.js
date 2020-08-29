@@ -22,8 +22,17 @@ import blender from '../Images/blender.png';
 import maya from '../Images/maya.png';
 import github from '../Images/github.png';
 import mongo from '../Images/mongo.webp';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+const theme = createMuiTheme({
+    palette: {
+      primary: {
+        main: '#86c232'
+      },
+    }
+  });
 
+  
 const useStyles = theme =>({
     head:{
         textAlign: 'left',
@@ -119,6 +128,7 @@ class Profile extends Component{
         const {classes} = this.props;
         const closs = classNames(classes.list,classes.paper);
         return(
+            <MuiThemeProvider theme={theme}>
             <div id="profile">
                 <Grid container className={classes.grid}>
                     <Grid item xs={12}>
@@ -206,6 +216,7 @@ class Profile extends Component{
                 
             
             </div>
+            </MuiThemeProvider>
         );
     }
 }

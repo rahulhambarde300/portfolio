@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { useState } from 'react';
 import {withStyles} from '@material-ui/core/styles'
 import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
-import logo from '../logo.svg';
+import cover from '../Images/cover.png';
+import R from '../Images/R.png';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
@@ -35,7 +36,21 @@ const useStyles = theme =>({
         color: '#fff'
       },
     },
-
+    logo:{
+      width : "60px", 
+      height : "60px", 
+      position : 'relative',
+      paddingLeft:'5px',
+      paddingRight:'5px'
+    },
+    overlay:{
+      position: 'absolute',
+      transition: '0.5s ease', 
+      zIndex:2,
+      overflow:'hidden',
+      width : "50px", 
+      height : "50px", 
+  },
 
 
 })
@@ -105,14 +120,24 @@ function HideOnScroll(props) {
 }
 
 
+
 class Header extends Component{
     constructor(props){
         super(props);
         this.state = {
             value : "Home",
-            hover : false
+            hover : false,
+            rotate : 0
         }
          
+    }
+
+    componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll, true);
+    }
+  
+    componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
     }
 
     handleChange = (event, newValue) => {
@@ -124,6 +149,13 @@ class Header extends Component{
     toggleHover = () =>{
       this.setState({
         hover : !this.state.hover
+      })
+    }
+
+    handleScroll = () =>{
+      console.log("Scrolled");
+      this.setState({
+        rotate :  window.pageYOffset/4
       })
     }
 
@@ -139,7 +171,10 @@ class Header extends Component{
                   <NavButton text="Home" classes = {classes} link="#home" />
                   <NavButton text="Profile" classes = {classes} link="#profile"/>
                   
-                  <img src={logo} style = {{ width : "50px", height : "50px"}}/>
+                  <img src={cover} className={classes.logo} 
+                    style={{transform: `rotate(${this.state.rotate}deg)`}}
+                    />
+                  <img src={R} className={classes.overlay}/>
                   <NavButton text="Work" classes = {classes} link="#work"/>
                   <NavButton text="Contact" classes = {classes} link="#contact"/>
                   

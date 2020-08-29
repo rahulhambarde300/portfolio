@@ -81,7 +81,7 @@ const useStylesFunction = makeStyles((theme) =>({
         left: '50%', 
         top: '50%',
         transform: 'translate(-50%, -50%)',
-        color:"#a8b0b5",
+        color:"#86c232",
         fontSize:"300%"
     }
     
