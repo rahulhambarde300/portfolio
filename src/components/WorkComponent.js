@@ -121,8 +121,7 @@ const Slideshow = () => {
     //onMouseEnter={() => setDisplay('block')} 
     //        onMouseLeave={() => setDisplay('none')}
     return (
-        
-        <div className="slide-container" className={classes.root} id="work">
+        <div className="slide-container" className={classes.root}>
             
             <Fade duration="2000" transitionDuration="500">
                 <div className="each-fade">
@@ -189,7 +188,7 @@ class Work extends Component{
     render(){
         const {classes} = this.props;
         return(
-            <div>
+            <div id="work">
                 <Grid container className={classes.grid}>
                     <Grid item  xs={12}>
                         <Styledhead className={classes.head}>Experience<hr/></Styledhead>

@@ -87,7 +87,7 @@ const NavButton = ({text, classes, link}) =>{
   };
   
   return(
-    <Button disableRipple className={classes.button} 
+    <Button className={classes.button} 
       onMouseEnter={() => setWidth(100)} 
       onMouseLeave={() => setWidth(0)}
       onClick={handleClick}
