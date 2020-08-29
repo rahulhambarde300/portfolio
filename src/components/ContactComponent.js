@@ -13,21 +13,27 @@ const useStyles = theme =>({
         paddingRight:'7%',
         paddingBottom:'30%',
     },
+    head:{
+        padding: theme.spacing(2),
+        textAlign: 'left',
+        color: "#86c232",
+        fontFamily:'JetBrainsMono'
+    },
     paper:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#fff",
+        color: "#6b6e70",
         fontFamily:'JetBrainsMono'
     },
     link:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color:"#03fcd7",
+        color:"#61892f",
         fontSize:"150%",
         textDecoration:"none",
         overflow:'wrap',
         '&:hover':{
-            color:"#fff"
+            color:"#86c232"
         }
     },
     bottom:{
@@ -37,9 +43,9 @@ const useStyles = theme =>({
     },
     icon:{
         fontSize:"300%",
-        color:'primary',
+        color:"#6e6b70",
         '&:hover':{
-            color:"#f52"
+            color:"#86c232"
         } 
         
     }
@@ -70,7 +76,7 @@ class Contact extends Component{
             <div id="contact">
                 <Grid container className={classes.grid}>
                     <Grid item xs={12}>
-                        <Styledhead className={classes.paper}>Let's Work Together<hr/></Styledhead>
+                        <Styledhead className={classes.head}>Let's Work Together<hr/></Styledhead>
                         <Styledpara className={classes.paper}>
                             I'm always on the lookout for fun new projects so if you've got something that 
                             you think we can work together on, send me a message and we can talk about it!

@@ -5,6 +5,7 @@ import img from '../Images/rahul.png';
 import Profile from './ProfileComponent';
 import Work from './WorkComponent';
 import Contact from './ContactComponent';
+import resume from '../resume/resume.pdf';
 
 
 const useStyles = theme =>({
@@ -14,7 +15,7 @@ const useStyles = theme =>({
     paper: {
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#fff",
+        color: "#61892f",
         fontFamily:'JetBrainsMono',
         paddingTop:'15%',
     },
@@ -36,9 +37,12 @@ const useStyles = theme =>({
     },
     button:{
         marginTop:"5px",
+        backgroundColor:"#61892f",
+        color:"#fff",
+        borderRadius:"10px",
         '&:hover':{
             backgroundColor:"inherit",
-            color:"#fff"
+            color:"#86c232"
         }
     }
 
@@ -52,6 +56,10 @@ class Home extends Component{
         super(props);
     }
 
+    onDocumentLoadSuccess = ({ numPages }) => {
+        this.setState({ numPages });
+      };
+
     render(){
         const {classes} = this.props;
         return(
@@ -60,9 +68,9 @@ class Home extends Component{
                     <Grid container spacing={3} className={classes.grid} >
                         <Grid item md={6} xs={12} >
                             <h2 className={classes.paper} > Hi, I am <br/> 
-                                <span style={{ fontSize:"200%"}}>Rahul Hambarde</span><br/> 
-                                A Game And Web Developer<br/>
-                                <Button variant="contained" color="#328fad" href="https://canva.me/FeBApYvfj9" 
+                                <span style={{ fontSize:"200%", color : "#fff"}}>Rahul Hambarde</span><br/> 
+                                <span style={{ color : "#6b6e70"}}>A Game And Web Developer</span><br/>
+                                <Button variant="contained" color="primary" href={resume} 
                                     target="none" className={classes.button}>
                                     Resume
                                 </Button>
@@ -79,6 +87,7 @@ class Home extends Component{
                     <Work/>
                     <Contact/>
 
+                    
                 </Container>
             </div>
         );

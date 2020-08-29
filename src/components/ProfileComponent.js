@@ -28,15 +28,21 @@ const useStyles = theme =>({
     head:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#fff",
+        color: "#86c232",
         fontFamily:'JetBrainsMono',
     },
     paper:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#fff",
+        color: "#6b6e70",
         fontFamily:'JetBrainsMono',
 
+    },
+    listHead:{
+        padding: theme.spacing(2),
+        textAlign: 'left',
+        color: "#fff",
+        fontFamily:'JetBrainsMono',
     },
     grid:{
         paddingLeft:'7%',
@@ -131,7 +137,7 @@ class Profile extends Component{
                     </Grid>
 
                     <Grid item xs={4} >
-                        <h3 className={classes.paper}>LANGUAGES</h3>
+                        <h3 className={classes.listHead}>LANGUAGES</h3>
                         <ul className={closs}>
                             
                             <Styledli><Styledimg src={c} className = {classes.img} alt="C"/>C</Styledli>
@@ -144,7 +150,7 @@ class Profile extends Component{
                         </ul>
                     </Grid>
                     <Grid item xs={4}>
-                        <h3 className={classes.paper}>FRAMEWORKS</h3>
+                        <h3 className={classes.listHead}>FRAMEWORKS</h3>
                         <ul className={closs}>
                             <Styledli><Styledimg src={logo} className = {classes.img} alt="React"/>ReactJS</Styledli>
                             <Styledli><Styledimg src={node} className = {classes.img} alt="Node"/>NodeJS</Styledli>
@@ -152,7 +158,7 @@ class Profile extends Component{
                         </ul>
                     </Grid>
                     <Grid item xs={4}>
-                        <h3 className={classes.paper}>TOOLS</h3>
+                        <h3 className={classes.listHead}>TOOLS</h3>
                         <ul className={closs}>
                             <Styledli><Styledimg src={unity} className = {classes.img} alt="Unity3D"/>Unity3D</Styledli>
                             <Styledli><Styledimg src={ps} className = {classes.img} alt="Photoshop"/>Photoshop</Styledli>
@@ -172,22 +178,22 @@ class Profile extends Component{
                                     <TabList onChange={this.handleChange} aria-label="Education"  
                                     indicatorColor="primary"
                                     textColor="inherit">
-                                        <Tab label="SSC" value="1" className={classes.head}/>
-                                        <Tab label="HSC" value="2" className={classes.head}/>
-                                        <Tab label="Engineering" value="3" className={classes.head}/>
+                                        <Tab label="Engineering" value="1" className={classes.listHead}/>
+                                        <Tab label="HSC" value="2" className={classes.listHead}/>
+                                        <Tab label="SSC" value="3" className={classes.listHead}/>  
                                     </TabList>
                                 </AppBar>
-                                <TabPanel value="1" className={classes.head}>
+                                <TabPanel value="3" className={classes.paper}>
                                     <h3>School : Mahatma Phule High School, Nanded</h3>
                                     <h4>Time : June 2005 - March 2015</h4>
                                     <h4>Percentage : 93.2%</h4>
                                 </TabPanel>
-                                <TabPanel value="2" className={classes.head}>
+                                <TabPanel value="2" className={classes.paper}>
                                     <h3>College : Yashwant Mahavidyala, Nanded</h3>
                                     <h4>Time : June 2015 - February 2017</h4>
                                     <h4>Percentage : 79.6%</h4>
                                 </TabPanel>
-                                <TabPanel value="3" className={classes.head}>
+                                <TabPanel value="1" className={classes.paper}>
                                     <h3>College : Shri Guru Gobind Singhji IE & T , Nanded</h3>
                                     <h4>Time : June 2017 - Present</h4>
                                     <h4>Branch : Computer Science</h4>

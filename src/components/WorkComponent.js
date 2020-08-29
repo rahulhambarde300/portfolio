@@ -15,8 +15,15 @@ const useStyles = theme =>({
     head:{
         padding: theme.spacing(2),
         textAlign: 'left',
-        color: "#fff",
+        color: "#86c232",
         fontFamily:'JetBrainsMono'
+    },
+    paper:{
+        padding: theme.spacing(2),
+        textAlign: 'left',
+        color: "#6b6e70",
+        fontFamily:'JetBrainsMono',
+
     },
     grid:{
         paddingLeft:'7%',
@@ -75,7 +82,7 @@ const useStylesFunction = makeStyles((theme) =>({
         left: '50%', 
         top: '50%',
         transform: 'translate(-50%, -50%)',
-        color:"#03fcd7",
+        color:"#86c232",
         fontSize:"300%"
     }
     
@@ -189,7 +196,7 @@ class Work extends Component{
                         <Styledhead className={classes.head}>Experience<hr/></Styledhead>
                         <ul className={classes.head}>
                             <li>
-                                <Styledpara  className={classes.head} >
+                                <Styledpara  className={classes.paper} >
                                     I have created games for gamejams like Brackeys Game Jam 2020.1, 2020.2, 
                                     GMTK game jam 2020 and 
                                     Ludum dare 47
@@ -197,7 +204,7 @@ class Work extends Component{
                                 <Slideshow/>
                             </li>
                             <li>
-                                <Styledpara  className={classes.head}>
+                                <Styledpara  className={classes.paper}>
                                     I have participated in Smart India Hackathon with my team.We were selected in 
                                     internal hackathon and went to national level.
                                 </Styledpara >
@@ -210,7 +217,7 @@ class Work extends Component{
                     </Grid>
                     <Grid item  xs={12}>
                         <Styledhead className={classes.head}>Work<hr/></Styledhead>
-                        <Styledpara  className={classes.head}>
+                        <Styledpara  className={classes.paper}>
                             I have worked for Hammercraft studios as a game developer intern
                         </Styledpara >
                     </Grid>

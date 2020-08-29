@@ -15,10 +15,6 @@ import {Link} from 'react-scroll';
 
 
 const useStyles = theme =>({
-    root:{
-      flexGrow: 1,
-      
-    },
     appBar:{
       background: '#000',
       boxShadow: "0px 2px 10px #222",
@@ -83,7 +79,7 @@ const NavButton = ({text, classes, link}) =>{
       >
       <view>
         <Typography style = {{marginBottom : 0, fontFamily:'JetBrainsMono'}}>{text}</Typography>
-        <ColoredLine   color = "#21c4c2" width = {width}/>
+        <ColoredLine   color = "#86c232" width = {width}/>
       </view>
     </Button>
 
@@ -134,7 +130,7 @@ class Header extends Component{
     render(){
         const {classes} = this.props;
         return(
-          <div className={classes.root} style={{ backgroundColor: '#000'}} id="home">
+          <div style={{ backgroundColor: '#000'}} id="home">
             <CssBaseline/>
             <HideOnScroll {...this.props}>
 
