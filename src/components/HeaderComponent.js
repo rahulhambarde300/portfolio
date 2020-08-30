@@ -6,12 +6,8 @@ import cover from '../Images/cover.png';
 import R from '../Images/R.png';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Slide from '@material-ui/core/Slide';
-import Home from './HomeComponent';
-import Profile from './ProfileComponent';
-import Work from './WorkComponent';
-import Contact from './ContactComponent';
-import {Link} from 'react-scroll';
+
+
 
 
 
@@ -19,7 +15,7 @@ const useStyles = theme =>({
     appBar:{
       background: '#000',
       boxShadow: "0px 2px 10px #222",
-      backgroundSize:"cover"
+      backgroundSize:"cover",
     },
 
     row:{
@@ -51,6 +47,7 @@ const useStyles = theme =>({
       width : "50px", 
       height : "50px", 
   },
+
 
 
 })
@@ -103,21 +100,7 @@ const NavButton = ({text, classes, link}) =>{
   
 }
 
-function HideOnScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
-  
-  return (
-    
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
 
 
 
@@ -164,7 +147,7 @@ class Header extends Component{
         return(
           <div style={{ backgroundColor: '#000'}} id="home">
             <CssBaseline/>
-            <HideOnScroll {...this.props}>
+
 
               <AppBar position="fixed" className={classes.appBar} >
                 <Toolbar className={classes.row}>
@@ -181,7 +164,7 @@ class Header extends Component{
                 </Toolbar>
                 
               </AppBar>
-            </HideOnScroll>
+
             
           </div>
         )

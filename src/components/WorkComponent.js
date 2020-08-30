@@ -109,9 +109,17 @@ const Styledanchor = styled.a`
     }
 `
 
+const Styleddate = styled.p`
+    font-size:20px;
+    text-align:right;
+    @media(max-width: 767px) {
+        font-size:15px
+    }
+`
 const fadeImages = [
   sage,backfire,blob,hole
 ];
+
 
 
 const Slideshow = () => {
@@ -192,22 +200,43 @@ class Work extends Component{
                 <Grid container className={classes.grid}>
                     <Grid item  xs={12}>
                         <Styledhead className={classes.head}>Experience<hr/></Styledhead>
-                        <ul className={classes.head}>
-                            <li>
+                        <div className={classes.head}>
+
                                 <Styledpara  className={classes.paper} >
-                                    I have created games for gamejams like Brackeys Game Jam 2020.1, 2020.2, 
-                                    GMTK game jam 2020 and 
-                                    Ludum dare 47
+                                    |>GameJams Participation
+                                    <ul>
+                                        <li>
+                                            Brackeys Game Jam 2020.2
+                                        </li>
+                                        <li>
+                                            GMTK Game Jam 2020
+                                        </li>
+                                        <li>
+                                            Ludum Dare 47
+                                        </li>
+                                        <li>
+                                            Brackeys Game Jam 2020.1
+                                        </li>
+                                    </ul>
+                                    Following are the submissions:
                                 </Styledpara >
                                 <Slideshow/>
-                            </li>
-                            <li>
+
                                 <Styledpara  className={classes.paper}>
-                                    I have participated in Smart India Hackathon with my team.We were selected in 
-                                    internal hackathon and went to national level.
+                                    |>Lift And Navigation Control Equipment(LANCE)
+                                    <ul>
+                                        <li>
+                                            Submission in SIH 2020 
+                                        </li>
+                                        <li>
+                                            Qualified in internal Hackathon and selected for national level
+                                        </li>
+                                        <li>
+                                            Object detection, Map generation, Navigation Systems
+                                        </li>
+                                    </ul>
                                 </Styledpara >
-                            </li>
-                        </ul>
+                        </div>
                         
 
                         
@@ -216,7 +245,20 @@ class Work extends Component{
                     <Grid item  xs={12}>
                         <Styledhead className={classes.head}>Work<hr/></Styledhead>
                         <Styledpara  className={classes.paper}>
-                            I have worked for Hammercraft studios as a game developer intern
+                            <b>|>Hammercraft Studios</b>
+                            <ul>
+                                <li>
+                                June,2020-July,2020  
+                                </li>
+                                <li>
+                                    Game Development Intern
+                                </li>
+                                <li>
+                                    My goal during internship was to work with Unity and create an optimized 
+                                    game for android.
+                                </li>
+                            </ul>
+                                           
                         </Styledpara >
                     </Grid>
                     

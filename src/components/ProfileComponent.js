@@ -134,10 +134,18 @@ class Profile extends Component{
                     <Grid item xs={12}>
                         <Styledhead className={classes.head}>About Me<hr/></Styledhead>
                         <Styledpara className={classes.paper}>
-                                I am a computer science student from Maharashtra, India.I am specialized in game and web development.
-                                I love to bring my ideas into reality though my code.<br/>
-                                I am an emerging game developer and I've developed many games for game jams and a few for interships.
-                                I am currently pursuing my degree from SGGSIE&T.
+                            <ul>
+                                <li>
+                                    A computer science student from Maharashtra, specialized in game and web development and
+                                    love to bring my ideas into reality though my code.
+                                </li>
+                                <li>
+                                    An emerging game developer , developed games for game jams and for intership.
+                                </li>
+                                <li>
+                                    Currently pursuing my degree from SGGSIE&T.
+                                </li>                               
+                            </ul>
                         </Styledpara>
                     </Grid>
 

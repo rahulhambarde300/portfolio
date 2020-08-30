@@ -5,7 +5,7 @@ import img from '../Images/rahul.png';
 import Profile from './ProfileComponent';
 import Work from './WorkComponent';
 import Contact from './ContactComponent';
-import resume from '../resume/resume.pdf';
+import resume from '../resume/rahul_hambarde.pdf';
 
 
 const useStyles = theme =>({
