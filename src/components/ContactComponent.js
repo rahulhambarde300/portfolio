@@ -6,6 +6,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import '../App.css';
 
 const useStyles = theme =>({
     grid:{
@@ -72,7 +73,7 @@ class Contact extends Component{
     render(){
         const {classes} = this.props;
         return(
-            <div id="contact">
+            <div id="contact" className="trans">
                 <Grid container className={classes.grid}>
                     <Grid item xs={12}>
                         <Styledhead className={classes.head}>Let's Work Together<hr/></Styledhead>

@@ -9,6 +9,8 @@ import sage from '../Images/itch/last_sage.png';
 import backfire from '../Images/itch/backfire.jpg';
 import blob from '../Images/itch/blob_ai.jpg';
 import hole from '../Images/itch/hole.png';
+import '../App.css';
+import ArrowRightSharpIcon from '@material-ui/icons/ArrowRightSharp';
 
 
 const useStyles = theme =>({
@@ -19,6 +21,7 @@ const useStyles = theme =>({
     },
     paper:{
         padding: theme.spacing(2),
+        paddingTop:0,
         textAlign: 'left',
         color: "#a8b0b5",
         fontFamily:'JetBrainsMono',
@@ -109,9 +112,10 @@ const Styledanchor = styled.a`
     }
 `
 
-const Styleddate = styled.p`
+const Styledsubpara = styled.p`
     font-size:20px;
-    text-align:right;
+    text-align:left;
+    font-color:#61892f;
     @media(max-width: 767px) {
         font-size:15px
     }
@@ -196,14 +200,14 @@ class Work extends Component{
     render(){
         const {classes} = this.props;
         return(
-            <div id="work">
+            <div id="work" className='trans'>
                 <Grid container className={classes.grid}>
                     <Grid item  xs={12}>
                         <Styledhead className={classes.head}>Experience<hr/></Styledhead>
                         <div className={classes.head}>
-
+                                <Styledsubpara> <ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>GameJams Participation</Styledsubpara>
                                 <Styledpara  className={classes.paper} >
-                                    |>GameJams Participation
+                                   
                                     <ul>
                                         <li>
                                             Brackeys Game Jam 2020.2
@@ -222,8 +226,8 @@ class Work extends Component{
                                 </Styledpara >
                                 <Slideshow/>
 
+                                <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>Lift And Navigation Control Equipment(LANCE)</Styledsubpara>
                                 <Styledpara  className={classes.paper}>
-                                    |>Lift And Navigation Control Equipment(LANCE)
                                     <ul>
                                         <li>
                                             Submission in SIH 2020 
@@ -244,22 +248,25 @@ class Work extends Component{
                     </Grid>
                     <Grid item  xs={12}>
                         <Styledhead className={classes.head}>Work<hr/></Styledhead>
-                        <Styledpara  className={classes.paper}>
-                            <b>|>Hammercraft Studios</b>
-                            <ul>
-                                <li>
-                                June,2020-July,2020  
-                                </li>
-                                <li>
-                                    Game Development Intern
-                                </li>
-                                <li>
-                                    My goal during internship was to work with Unity and create an optimized 
-                                    game for android.
-                                </li>
-                            </ul>
-                                           
-                        </Styledpara >
+                        
+                        <div className={classes.head}>
+                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>Hammercraft Studios</Styledsubpara>
+                            <Styledpara  className={classes.paper}>
+                                <ul>
+                                    <li>
+                                    June,2020-July,2020  
+                                    </li>
+                                    <li>
+                                        Game Development Intern
+                                    </li>
+                                    <li>
+                                        My goal during internship was to work with Unity and create an optimized 
+                                        game for android.
+                                    </li>
+                                </ul>
+                                            
+                            </Styledpara >
+                        </div>
                     </Grid>
                     
                 </Grid>

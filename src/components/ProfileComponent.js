@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {withStyles} from '@material-ui/core/styles';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import '../App.css';
 import { Typography, Grid, Paper, Tabs, Tab, AppBar } from '@material-ui/core';
 import TabPanel from '@material-ui/lab/TabPanel';
 import TabContext from '@material-ui/lab/TabContext';
@@ -129,7 +130,7 @@ class Profile extends Component{
         const closs = classNames(classes.list,classes.paper);
         return(
             <MuiThemeProvider theme={theme}>
-            <div id="profile">
+            <div id="profile" className='trans'>
                 <Grid container className={classes.grid}>
                     <Grid item xs={12}>
                         <Styledhead className={classes.head}>About Me<hr/></Styledhead>

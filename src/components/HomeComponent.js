@@ -6,6 +6,7 @@ import Profile from './ProfileComponent';
 import Work from './WorkComponent';
 import Contact from './ContactComponent';
 import resume from '../resume/rahul_hambarde.pdf';
+import '../App.css';
 
 
 const useStyles = theme =>({
@@ -63,7 +64,7 @@ class Home extends Component{
     render(){
         const {classes} = this.props;
         return(
-            <div className={classes.root}>
+            <div className={classes.root,'trans'}>
                 <Container >
                     <Grid container spacing={3} className={classes.grid} >
                         <Grid item md={6} xs={12} >

@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/HeaderComponent';
 import Home from './components/HomeComponent';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import {createGlocalStyle} from 'styled-components';
 
 const scrollTheme = createMuiTheme({
   overrides: {
