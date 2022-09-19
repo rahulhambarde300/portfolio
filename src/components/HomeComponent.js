@@ -70,7 +70,7 @@ class Home extends Component{
                         <Grid item md={6} xs={12} >
                             <h2 className={classes.paper} > Hi, I am <br/> 
                                 <span style={{ fontSize:"200%", color : "#fff"}}>Rahul Hambarde</span><br/> 
-                                <span style={{ color : "#a8b0b5"}}>A Game And Web Developer</span><br/>
+                                <span style={{ color : "#a8b0b5"}}>Software Developer|Analyst</span><br/>
                                 <Button variant="contained" color="primary" href={resume} 
                                     target="none" className={classes.button}>
                                     Resume

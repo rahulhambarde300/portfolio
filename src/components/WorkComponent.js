@@ -233,10 +233,11 @@ class Work extends Component{
                                             Submission in SIH 2020 
                                         </li>
                                         <li>
-                                            Qualified in internal Hackathon and selected for national level
+                                            An automated warehouse transport robot with object detection, map generation and
+                                            navigation Systems
                                         </li>
                                         <li>
-                                            Object detection, Map generation, Navigation Systems
+                                            Won at national level
                                         </li>
                                     </ul>
                                 </Styledpara >
@@ -254,17 +255,56 @@ class Work extends Component{
                             <Styledpara  className={classes.paper}>
                                 <ul>
                                     <li>
-                                    June,2020-July,2020  
+                                    June,2020- July,2020  
                                     </li>
                                     <li>
                                         Game Development Intern
                                     </li>
                                     <li>
+                                        Tech Stack: Unity, C#
+                                    </li>
+                                    <li>
                                         My goal during internship was to work with Unity and create an optimized 
                                         game for android.
                                     </li>
-                                </ul>
-                                            
+                                </ul>            
+                            </Styledpara >
+
+                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>StareIn Studios</Styledsubpara>
+                            <Styledpara  className={classes.paper}>
+                                <ul>
+                                    <li>
+                                        Feb,2021- Jun,2021  
+                                    </li>
+                                    <li>
+                                        Game Development Intern
+                                    </li>
+                                    <li>
+                                        Tech Stack: Unity, C#
+                                    </li>
+                                    <li>
+                                        Worked in Unity to develop android game prototypes.
+                                    </li>
+                                </ul>              
+                            </Styledpara >
+
+                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>TIAA GBS</Styledsubpara>
+                            <Styledpara  className={classes.paper}>
+                                <ul>
+                                    <li>
+                                        Jul,2021- Present  
+                                    </li>
+                                    <li>
+                                        Software Developer
+                                    </li>
+                                    <li>
+                                        Tech Stack: AngularJS, SpringBoot, Java
+                                    </li>
+                                    <li>
+                                        I work as a full stack developer, developing new applications as well as
+                                        maintaining old applications and upgrading those.
+                                    </li>
+                                </ul>              
                             </Styledpara >
                         </div>
                     </Grid>

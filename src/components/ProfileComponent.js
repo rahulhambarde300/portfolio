@@ -23,6 +23,9 @@ import blender from '../Images/blender.png';
 import maya from '../Images/maya.png';
 import github from '../Images/github.png';
 import mongo from '../Images/mongo.webp';
+import angular from '../Images/angular.svg';
+import spring from '../Images/spring.png';
+
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -137,14 +140,14 @@ class Profile extends Component{
                         <Styledpara className={classes.paper}>
                             <ul>
                                 <li>
-                                    A computer science student from Maharashtra, specialized in game and web development and
-                                    love to bring my ideas into reality though my code.
+                                    A software developer at TIAA GBS, Pune.
                                 </li>
                                 <li>
-                                    An emerging game developer , developed games for game jams and for intership.
+                                    I specialize in both frontend and backend and learn game development in my part time. 
+                                    I have developed mini games for game jams and for interships as well.
                                 </li>
                                 <li>
-                                    Currently pursuing my degree from SGGSIE&T.
+                                    Always striving to learn new technologies, tools.
                                 </li>                               
                             </ul>
                         </Styledpara>
@@ -170,9 +173,11 @@ class Profile extends Component{
                     <Grid item xs={4}>
                         <h3 className={classes.listHead}>FRAMEWORKS</h3>
                         <ul className={closs}>
-                            <Styledli><Styledimg src={logo} className = {classes.img} alt="React"/>ReactJS</Styledli>
-                            <Styledli><Styledimg src={node} className = {classes.img} alt="Node"/>NodeJS</Styledli>
-                            <Styledli><Styledimg src={express} className = {classes.img} alt="Express"/>ExpressJS</Styledli>
+                            <Styledli><Styledimg src={logo} className = {classes.img} alt="ReactJS"/>ReactJS</Styledli>
+                            <Styledli><Styledimg src={node} className = {classes.img} alt="NodeJS"/>NodeJS</Styledli>
+                            <Styledli><Styledimg src={express} className = {classes.img} alt="ExpressJS"/>ExpressJS</Styledli>
+                            <Styledli><Styledimg src={angular} className = {classes.img} alt="AngularJS"/>AngularJS</Styledli>
+                            <Styledli><Styledimg src={spring} className = {classes.img} alt="SprignBoot"/>SprignBoot</Styledli>
                         </ul>
                     </Grid>
                     <Grid item xs={4}>
@@ -213,8 +218,9 @@ class Profile extends Component{
                                 </TabPanel>
                                 <TabPanel value="1" className={classes.paper}>
                                     <h3>College : Shri Guru Gobind Singhji IE & T , Nanded</h3>
-                                    <h4>Time : June 2017 - Present</h4>
+                                    <h4>Time : June 2017 - June 2021</h4>
                                     <h4>Branch : Computer Science</h4>
+                                    <h4>CGPA : 8.52</h4>
                                 </TabPanel>
                             </TabContext>
                         </div>
