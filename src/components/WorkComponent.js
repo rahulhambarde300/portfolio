@@ -292,7 +292,7 @@ class Work extends Component{
                             <Styledpara  className={classes.paper}>
                                 <ul>
                                     <li>
-                                        Jul,2021- Present  
+                                        Jul, 2021 - Jul, 2023  
                                     </li>
                                     <li>
                                         Software Developer
