@@ -203,29 +203,28 @@ class Work extends Component{
             <div id="work" className='trans'>
                 <Grid container className={classes.grid}>
                     <Grid item  xs={12}>
-                        <Styledhead className={classes.head}>Experience<hr/></Styledhead>
+                        <Styledhead className={classes.head}>Projects<hr/></Styledhead>
                         <div className={classes.head}>
                                 <Styledsubpara> <ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>GameJams Participation</Styledsubpara>
                                 <Styledpara  className={classes.paper} >
-                                   
-                                    <ul>
-                                        <li>
-                                            Brackeys Game Jam 2020.2
-                                        </li>
-                                        <li>
-                                            GMTK Game Jam 2020
-                                        </li>
-                                        <li>
-                                            Ludum Dare 47
-                                        </li>
-                                        <li>
-                                            Brackeys Game Jam 2020.1
-                                        </li>
-                                    </ul>
-                                    Following are the submissions:
+                                    Following are some of my projects:
                                 </Styledpara >
                                 <Slideshow/>
-
+                                <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>QuickHire</Styledsubpara>
+                                <Styledpara  className={classes.paper}>
+                                    <ul>
+                                        <li>
+                                            Constructed a freelancer marketplace designed to connect freelancers with clients.
+                                        </li>
+                                        <li>
+                                            Collaborated on developing the application using Express serving a REST API with React as the frontend. Created
+                                            with a focus on user interface, usability and responsiveness.
+                                        </li>
+                                        <li>
+                                            Planned the project including market research, feature prioritization.
+                                        </li>
+                                    </ul>
+                                </Styledpara >
                                 <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>Lift And Navigation Control Equipment(LANCE)</Styledsubpara>
                                 <Styledpara  className={classes.paper}>
                                     <ul>
@@ -251,26 +250,25 @@ class Work extends Component{
                         <Styledhead className={classes.head}>Work<hr/></Styledhead>
                         
                         <div className={classes.head}>
-                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>Hammercraft Studios</Styledsubpara>
+                        <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>TIAA GBS</Styledsubpara>
                             <Styledpara  className={classes.paper}>
                                 <ul>
                                     <li>
-                                    June,2020- July,2020  
+                                        Jul, 2021 - Jul, 2023  
                                     </li>
                                     <li>
-                                        Game Development Intern
+                                        Software Developer
                                     </li>
                                     <li>
-                                        Tech Stack: Unity, C#
+                                        Tech Stack: AngularJS, SpringBoot, Java
                                     </li>
                                     <li>
-                                        My goal during internship was to work with Unity and create an optimized 
-                                        game for android.
+                                        I worked as a full stack developer, developing new applications as well as
+                                        maintaining old applications and upgrading those.
                                     </li>
-                                </ul>            
+                                </ul>              
                             </Styledpara >
-
-                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>StareIn Studios</Styledsubpara>
+                        <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>StareIn Studios</Styledsubpara>
                             <Styledpara  className={classes.paper}>
                                 <ul>
                                     <li>
@@ -288,23 +286,23 @@ class Work extends Component{
                                 </ul>              
                             </Styledpara >
 
-                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>TIAA GBS</Styledsubpara>
+                            <Styledsubpara><ArrowRightSharpIcon style={{verticalAlign:"middle",fontSize:"150%"}}/>Hammercraft Studios</Styledsubpara>
                             <Styledpara  className={classes.paper}>
                                 <ul>
                                     <li>
-                                        Jul, 2021 - Jul, 2023  
+                                    June,2020- July,2020  
                                     </li>
                                     <li>
-                                        Software Developer
+                                        Game Development Intern
                                     </li>
                                     <li>
-                                        Tech Stack: AngularJS, SpringBoot, Java
+                                        Tech Stack: Unity, C#
                                     </li>
                                     <li>
-                                        I work as a full stack developer, developing new applications as well as
-                                        maintaining old applications and upgrading those.
+                                        My goal during internship was to work with Unity and create an optimized 
+                                        game for android.
                                     </li>
-                                </ul>              
+                                </ul>            
                             </Styledpara >
                         </div>
                     </Grid>

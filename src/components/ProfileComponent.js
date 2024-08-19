@@ -14,6 +14,7 @@ import python from '../Images/python.png';
 import js from '../Images/js.png';
 import php from '../Images/php.svg';
 import sql from '../Images/sql.png';
+import docker from '../Images/docker.png';
 import logo from '../logo.svg';
 import node from '../Images/node.png';
 import express from '../Images/express.png';
@@ -25,6 +26,7 @@ import github from '../Images/github.png';
 import mongo from '../Images/mongo.webp';
 import angular from '../Images/angular.svg';
 import spring from '../Images/spring.png';
+import aws from '../Images/aws.png';
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
@@ -140,14 +142,13 @@ class Profile extends Component{
                         <Styledpara className={classes.paper}>
                             <ul>
                                 <li>
-                                    A software developer at TIAA GBS, Pune.
+                                    An MACS student at Dalhousie university, Halifax.
                                 </li>
                                 <li>
-                                    I specialize in both frontend and backend and learn game development in my part time. 
-                                    I have developed mini games for game jams and for interships as well.
+                                    Full-stack developer with experience in testing and DevOps as well. Proficient in Java, Springboot and various JS frameworks like Node, React, Next and Express.
                                 </li>
                                 <li>
-                                    Always striving to learn new technologies, tools.
+                                I aim to provide industry level applications and solutions and constantly learn new skills and improve myself.
                                 </li>                               
                             </ul>
                         </Styledpara>
@@ -177,7 +178,7 @@ class Profile extends Component{
                             <Styledli><Styledimg src={node} className = {classes.img} alt="NodeJS"/>NodeJS</Styledli>
                             <Styledli><Styledimg src={express} className = {classes.img} alt="ExpressJS"/>ExpressJS</Styledli>
                             <Styledli><Styledimg src={angular} className = {classes.img} alt="AngularJS"/>AngularJS</Styledli>
-                            <Styledli><Styledimg src={spring} className = {classes.img} alt="SprignBoot"/>SprignBoot</Styledli>
+                            <Styledli><Styledimg src={spring} className = {classes.img} alt="SpringBoot"/>SpringBoot</Styledli>
                         </ul>
                     </Grid>
                     <Grid item xs={4}>
@@ -186,9 +187,10 @@ class Profile extends Component{
                             <Styledli><Styledimg src={unity} className = {classes.img} alt="Unity3D"/>Unity3D</Styledli>
                             <Styledli><Styledimg src={ps} className = {classes.img} alt="Photoshop"/>Photoshop</Styledli>
                             <Styledli><Styledimg src={blender} className = {classes.img} alt="Blender"/>Blender</Styledli>
-                            <Styledli><Styledimg src={maya} className = {classes.img} alt="Maya"/>Maya</Styledli>
+                            <Styledli><Styledimg src={docker} style={{height:"150%"}} className = {classes.img} alt="Docker"/>Docker</Styledli>
                             <Styledli><Styledimg src={github} className = {classes.img} alt="Github"/>Github</Styledli>
                             <Styledli><Styledimg src={mongo} className = {classes.img} alt="Mongo"/>MongoDB</Styledli>
+                            <Styledli><Styledimg src={aws} className = {classes.img} alt="Mongo"/>AWS</Styledli>
                         </ul>
                     </Grid>
                 </Grid>
@@ -201,26 +203,21 @@ class Profile extends Component{
                                     <TabList onChange={this.handleChange} aria-label="Education"  
                                     indicatorColor="primary"
                                     textColor="inherit">
-                                        <Tab label="Engineering" value="1" className={classes.listHead}/>
-                                        <Tab label="HSC" value="2" className={classes.listHead}/>
-                                        <Tab label="SSC" value="3" className={classes.listHead}/>  
+                                        <Tab label="Masters" value="1" className={classes.listHead}/>
+                                        <Tab label="Bachelors" value="2" className={classes.listHead}/>
                                     </TabList>
                                 </AppBar>
-                                <TabPanel value="3" className={classes.paper}>
-                                    <h3>School : Mahatma Phule High School, Nanded</h3>
-                                    <h4>Time : June 2005 - March 2015</h4>
-                                    <h4>Percentage : 93.2%</h4>
-                                </TabPanel>
                                 <TabPanel value="2" className={classes.paper}>
-                                    <h3>College : Yashwant Mahavidyala, Nanded</h3>
-                                    <h4>Time : June 2015 - February 2017</h4>
-                                    <h4>Percentage : 79.6%</h4>
+                                    <h3>Shri Guru Gobind Singhji IE & T, Nanded</h3>
+                                    <h4>Jun 2017 - Jun 2021</h4>
+                                    <h4>Bachelors in Computer Science & Engg.</h4>
+                                    <h4>GPA: 3.5/4</h4>
                                 </TabPanel>
                                 <TabPanel value="1" className={classes.paper}>
-                                    <h3>College : Shri Guru Gobind Singhji IE & T , Nanded</h3>
-                                    <h4>Time : June 2017 - June 2021</h4>
-                                    <h4>Branch : Computer Science</h4>
-                                    <h4>CGPA : 8.52</h4>
+                                    <h3>Dalhousie university, Halifax, NS</h3>
+                                    <h4>Sep 2023 - May 2025</h4>
+                                    <h4>Masters in Applied Computer Science</h4>
+                                    <h4>GPA: 4.2/4.3</h4>
                                 </TabPanel>
                             </TabContext>
                         </div>
